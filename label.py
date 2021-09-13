@@ -7,15 +7,8 @@ from PIL import Image, ImageDraw, ImageFont
 '''
 sws:
 
-Function comments 
-null check on attrubites 
-108 magic numbers, use constants 
-use camel case as a stanard for all vars 
-
-if no arguments are passed in print version and help (example of how to use it). Don't use default data. 
 if you want testing data make that an arugment 
 file version even if its just a table with the last updated date and time.
-
 '''
 
 
@@ -66,6 +59,7 @@ def main(commandline):
     printLabel(args.poddata)
 
 if __name__ == "__main__":
+    print("label-maker 0.1.0")
     parser = argparse.ArgumentParser(description='FPC label generator')
     parser.add_argument('--poddata', required=True, help='eg: 1947ZZ9999-FF:FF:FF:FF:FF:FF-ABCD-0') 
     args = parser.parse_args()
